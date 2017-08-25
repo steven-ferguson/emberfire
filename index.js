@@ -51,5 +51,13 @@ module.exports = {
     }
 
     return mergeTrees(trees, { overwrite: true });
+  },
+
+  config(env, appConfig) {
+    return {
+      changeTracker: {
+        auto: true
+      }
+    };
   }
 };
